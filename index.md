@@ -1,8 +1,5 @@
 ---
-title: Meditation App
 ---
-
-# Meditation App
 
 A simple, private meditation tracker.
 
