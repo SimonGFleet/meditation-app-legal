@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email confirmed — Meditation App</title>
+  <style>
+    :root {
+      --bg: #f1efe8;
+      --card: #fbf8f2;
+      --text: #18312b;
+      --text-muted: #52645d;
+      --border: #ddd7cc;
+      --accent: #18312b;
+      --destructive: #9b4736;
+      --success: #2f6e3b;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 440px;
+      margin: 0 auto;
+      padding: 64px 24px 48px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 26px;
+      padding: 32px 28px;
+      text-align: center;
+    }
+    .icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      line-height: 1;
+    }
+    .icon.success {
+      background: #dde9df;
+      color: var(--success);
+    }
+    .icon.error {
+      background: #f0ddd8;
+      color: var(--destructive);
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 0 12px;
+    }
+    p {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.5;
+      margin: 0 0 16px;
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div id="success-view">
+        <div class="icon success">&#10003;</div>
+        <h1>Email confirmed</h1>
+        <p>Your email is verified. Open the Meditation App and sign in to start using your account.</p>
+      </div>
+
+      <div id="error-view" class="hidden">
+        <div class="icon error">!</div>
+        <h1>Link expired</h1>
+        <p id="error-message">This confirmation link is invalid or has already been used. Open the Meditation App and try signing up again, or sign in if your account is already active.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Supabase appends ?error=... or #error=... if the confirmation token is
+    // invalid or expired. Detect both query and fragment params.
+    const query = new URLSearchParams(window.location.search);
+    const hash = window.location.hash || "";
+    const fragment = new URLSearchParams(hash.startsWith("#") ? hash.slice(1) : hash);
+
+    const errorDescription =
+      query.get("error_description") ||
+      query.get("error") ||
+      fragment.get("error_description") ||
+      fragment.get("error");
+
+    if (errorDescription) {
+      document.getElementById("success-view").classList.add("hidden");
+      document.getElementById("error-view").classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>
