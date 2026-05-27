@@ -4,11 +4,11 @@ title: Terms of Service
 
 # Terms of Service
 
-**Last updated: 26 May 2026**
+**Last updated: 27 May 2026**
 
-By creating an account or using the Meditation App ("the App"), you agree to these terms. If you don't agree, don't use the App.
+By creating an account or using Settle: Meditation Journal, you agree to these terms. If you don't agree, don't use the App.
 
-The App is operated by Simon Fleet ("we", "us"). Contact: [simongabrielfleet@gmail.com](mailto:simongabrielfleet@gmail.com).
+The App is operated by Simon Fleet. Contact: [simongabrielfleet@gmail.com](mailto:simongabrielfleet@gmail.com).
 
 ## Eligibility
 
