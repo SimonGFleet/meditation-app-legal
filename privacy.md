@@ -6,9 +6,9 @@ title: Privacy Policy
 
 **Last updated: 26 May 2026**
 
-This policy explains what data the Meditation App ("the App") collects, why, where it's stored, and what control you have over it.
+This policy explains what data Settle: Meditation Journal collects, why, where it's stored, and what control you have over it.
 
-The App is operated by Simon Fleet ("we", "us"). Contact: [simongabrielfleet@gmail.com](mailto:simongabrielfleet@gmail.com).
+The App is operated by Simon Fleet. Contact: [simongabrielfleet@gmail.com](mailto:simongabrielfleet@gmail.com).
 
 ## What we collect
 
