@@ -4,7 +4,7 @@ title: Privacy Policy
 
 # Privacy Policy
 
-**Last updated: 26 May 2026**
+**Last updated: 27 May 2026**
 
 This policy explains what data Settle: Meditation Journal collects, why, where it's stored, and what control you have over it.
 
